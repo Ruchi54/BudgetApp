@@ -1,0 +1,56 @@
+.btn.active {
+  background-color: #b4dfe9;
+}
+
+.btn.active1 {
+  background-color: #ebf2fc;
+  color: #bec8e4;
+}
+
+.btn.active2 {
+  background-color: #fce4ec80;
+  color: #c337a5;
+}
+
+.btn.active3 {
+  background-color: #fce4ec80;
+  color: #5abce9;
+}
+
+.btn {
+  /*background-color: #c337a5;*/
+  cursor: pointer;
+  /*border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;*/
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#radio-orange + label {
+  background-color: #fce4ec80;
+  color: #d8a84f;
+}
+
+#radio-orange:checked + label,
+#radio-orange:focus + label {
+  cursor: pointer;
+  background-color: #d8a84f;
+  color: #ffffff;
+}
+
+.icon_column {
+  height: 5rem;
+  width: 5rem;
+
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 80%;
+}

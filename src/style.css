@@ -1,0 +1,248 @@
+body {
+  background-color: #ebf2fc;
+}
+
+.main_card {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 30%;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  flex-direction: column;
+}
+
+.main {
+  margin-left: 10%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin-top: 5%;
+  margin-left: 30%;
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.balance_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-image: linear-gradient(-135deg, #7b56ff 40%, #52e2ff 120%);
+  border-radius: 5%;
+}
+
+.transaction_card {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: white;
+  border-radius: 3%;
+}
+
+.icon_row_expense {
+}
+
+.container {
+}
+
+/* Radio Button for Income */
+input[type="radio"] {
+  position: relativ;
+  display: none;
+}
+
+input[type="radio"] + label {
+  min-width: 25px;
+  height: 25px;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 50px;
+  position: relative;
+}
+
+input[type="radio"]#radio-orange + label {
+  background-color: #fce4ec80;
+  color: #d8a84f;
+}
+
+input[type="radio"]#rradio-orange:hover + label,
+input[type="radio"]#radio-orange:checked + label,
+input[type="radio"]#radio-orange:focus + label {
+  cursor: pointer;
+  background-color: #d8a84f;
+  color: #ffffff;
+}
+
+input[type="radio"]#radio-pink + label {
+  background-color: #fce4ec80;
+  color: #c337a5;
+}
+
+input[type="radio"]#rradio-pink:hover + label,
+input[type="radio"]#radio-pink:checked + label,
+input[type="radio"]#radio-pink:focus + label {
+  cursor: pointer;
+  background-color: #c337a5;
+  color: #ffffff;
+}
+
+input[type="radio"]#radio-yellow + label {
+  background-color: #fce4ec80;
+  color: #dde95a;
+}
+
+input[type="radio"]#rradio-yellow:hover + label,
+input[type="radio"]#radio-yellow:checked + label,
+input[type="radio"]#radio-yellow:focus + label {
+  cursor: pointer;
+  background-color: #dde95a;
+  color: #ffffff;
+}
+
+input[type="radio"]#radio-blue + label {
+  background-color: #fce4ec80;
+  color: #5abce9;
+}
+
+input[type="radio"]#rradio-blue:hover + label,
+input[type="radio"]#radio-blue:checked + label,
+input[type="radio"]#radio-blue:focus + label {
+  cursor: pointer;
+  background-color: #5abce9;
+  color: #ffffff;
+}
+
+.heading {
+  color: #5b657a;
+  font-size: 15px;
+}
+
+.icon_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  /*display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 4rem 2.4rem;
+  margin-top: 3rem;
+  padding: 0 10px;*/
+}
+
+.icon_column {
+  height: 5rem;
+  width: 5rem;
+
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 80%;
+}
+
+/*Calculator*/
+.type__amount {
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--greyLight-1);
+  padding: 0.4rem 0 1rem 0;
+}
+
+.calculator__number {
+  height: 5rem;
+  width: 5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #5b657a;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 4rem 2.4rem;
+  margin-top: 1%;
+}
+
+textarea {
+  margin-top: 50px;
+  padding-top: 20px;
+  width: 80%;
+  border: none;
+}
+
+button {
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+}
+
+.balance__empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  color: var(--greyLight-3);
+  text-align: center;
+  float: left;
+  color: #5b657a;
+}
+
+.svg_icons {
+  transform: scale(5);
+  color: #d5ddf3;
+}
+
+.svg_addicons {
+  transform: scale(2);
+  cursor: pointer;
+  color: #5b657a;
+  margin-left: 2px;
+  margin-bottom: 20px;
+}
+
+.svg_addicons :hover {
+  color: #7b56ff;
+}
+
+.delete {
+  cursor: pointer;
+  color: #d5ddf3;
+}
+
+.delete :hover {
+  color: #5b657a;
+}
